@@ -1,0 +1,42 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import "react-datepicker/dist/react-datepicker.css";
+@import "react-toastify/dist/ReactToastify.css";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/autoplay";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.pstb {
+  overflow: hidden;
+}
+
+.pstb:hover {
+  overflow: overlay;
+}
+
+.pstb::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pstb::-webkit-scrollbar-track {
+  display: none;
+}
+
+.pstb::-webkit-scrollbar-thumb {
+  background: rgb(186, 185, 185);
+  border-radius: 10px;
+}
+
+.react-datepicker__input-container > input{
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+}
