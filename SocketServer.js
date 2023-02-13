@@ -106,6 +106,7 @@ const SocketServer = (socket) => {
   });
 
   socket.on("callUser", (call) => {
+    console.log("having it");
     const clients = users.filter((user) => user._id === call.userToCall);
     if (clients.length > 0) {
       clients.forEach((client) => {
