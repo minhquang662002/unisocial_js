@@ -49,4 +49,5 @@ export const store = configureStore({
       weatherApi.middleware,
       notificationApi.middleware
     ),
+  devTools: false,
 });

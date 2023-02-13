@@ -10,6 +10,10 @@ import { BrowserRouter } from "react-router-dom";
 import { store } from "./redux/app/store";
 import relativeTime from "dayjs/plugin/relativeTime";
 import dayjs from "dayjs";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if (process.env.NODE_ENV === "production") disableReactDevTools();
+
 dayjs.extend(relativeTime);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
